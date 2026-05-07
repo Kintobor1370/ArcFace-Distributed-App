@@ -2,10 +2,10 @@
 
 A Windows Presentation Foundation (WPF) application for calculating and displaying the similarity rate between two user-selected face images.
 
-The application uses the [ArcFace face recognition model](https://huggingface.co/garavv/arcface-onnx) together with a [custom-built NuGet package](https://www.nuget.org/packages/Kintobor.ArcFace.Locks.Embeddings/) to calculate facial embeddings, distances, and similarity rate. The system follows a distributed architecture and is separated into client and server components using the MVC design pattern.
+This application uses the [ArcFace face recognition model](https://huggingface.co/garavv/arcface-onnx) together with a [custom-built NuGet package](https://www.nuget.org/packages/Kintobor.ArcFace.Locks.Embeddings/) to calculate distance and similarity rate between two face images. The application follows a distributed architecture and is separated into client and server components using the MVC design pattern.
 
 - The client application provides the graphical user interface and performs face similarity calculations.
-- The server application manages access to the SQLite database, which stores previously processed images.
+- The server application processes images and manages access to the SQLite database, which stores previously processed images.
 
 ## Client Application Features
 
@@ -23,6 +23,7 @@ The application uses the [ArcFace face recognition model](https://huggingface.co
 - Error and notification dialog boxes for:
   - Missing image selections
   - Successful cancellation of calculations
+- Delete all images from the database
 
 ## Examples of the Client Application UI
 
