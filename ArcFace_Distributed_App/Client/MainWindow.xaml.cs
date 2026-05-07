@@ -527,7 +527,7 @@ namespace WpfApp1
             ViewModel.Similarity = 0;
             DistanceTokenKey = Guid.NewGuid().ToString();
             SimilarityTokenKey = Guid.NewGuid().ToString();
-            pbStatus.Value = 0;                                         // ProgressBar для to display the progress of calculations
+            pbStatus.Value = 0;                                         // ProgressBar to display the progress of calculations
 
             if (ViewModel.ImagesChanged && CheckSelectedImages())
             {
