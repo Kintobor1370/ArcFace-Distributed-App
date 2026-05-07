@@ -1,7 +1,7 @@
 # ArcFace Distributed App
 
-  A Windows Presentation Foundation application that uses ArcFace model to display similarity rate between two face images imported by the user.
-  All calculations are made on a server and displayed via a web client.
+A Windows Presentation Foundation application that uses ArcFace model to display similarity rate between two face images selected by the user.
+The client application provides the user interface and does the calculations, while the server accesses the database where images that were already used are stored.
 \\
 # To set up the application:
 1. Download this repository
